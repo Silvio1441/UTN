@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@400;500;600;700&family=Smooch&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-w {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: "ubunto", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-w {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    background: url("img/luna.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: "ubuntu", sans-serif;
+}
+
+.home .max-w {
+    margin: 300px 0 30px 20px;
+}
+
+.home .home-contenedor .text-1 {
+    font-size: 27px;
+}
+
+.home .home-contenedor .text-2 {
+    font-size:50px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-contenedor .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-contenedor .text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-contenedor a {
+    font-size: 23px;
+    padding: 10px 30px;
+}
+
+.home .home-contenedor .col {
+    width: 50%;
+}
+/*
+@media(max-w: 947px) {
+    .max-w {
+    padding: 0 50px;
+    }
+}
+
+.menu-btn {
+    display: block;
+    z-index: 999;
+}
+
+.menu-btn i.active:before {
+     content: "\f00d";
+}
+
+.navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+}
+.navbar .menu.active {
+    left: 0;
+}
+
+.navbar .menu li {
+    display: block;
+}
+
+.navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+}
+*/
+section {
+    padding: 100px 0;
+}
+
+.acerca, .servicios {
+    font-family: "Poppins", sans-serif;
+}
+
+section .titulo {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding: 20px;
+    font-family: "ubuntu", sans-serif;
+}
+
+section .titulo::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .titulo::after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.acerca .titulo::after {
+    content: "Quien soy"
+}
+
+.acerca .acerca-contenedor,
+.servicios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acerca .acerca-contenedor .col-izq {
+    width: 45%;
+}
+
+.acerca .acerca-contenedor .col-izq img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.acerca .acerca-contenedor .col-der {
+    width: 55%;
+}
+
+.acerca .acerca-contenedor .col-der .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.acerca .acerca-contenedor .col-der .text span {
+    color: crimson;
+}
+
+.acerca .acerca-contenedor .col-der p {
+    text-align: justify;
+}
+
+.acerca .acerca-contenedor .col-der a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease ;
+}
+
+.acerca .acerca-contenedor .col-der a:hover {
+    color: crimson;
+    background: none;
+}
+
+.servicios {
+    color:#fff;
+    background: #111;
+}
+
+.servicios .titulo::before {
+    background: #fff;
+}
+
+.servicios .titulo::after {
+    background: #111;
+    content: "Que ofrezco"
+}
+
+.servicios .servicios-contenedor .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.servicios .servicios-contenedor .card:hover {
+    background: crimson;
+}
+
+.servicios .servicios-contenedor .card .box {
+    transition: all 0.3s ease;
+}
+
+.servicios .servicios-contenedor .card:hover .box {
+    transform: scale(1.05);
+}
+
+
+.servicios .servicios-contenedor .card i {
+    font-size: 50px;
+    color: crimson;
+}
+
+.servicios .servicios-contenedor .card:hover i {
+    color: #fff;
+}
+
+.servicios .servicios-contenedor .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+
+
+
+
